@@ -237,11 +237,15 @@ public class Exercise1 {
 		 * 3) go to http://developers.facebook.com/docs/reference/api/ ; click on one of the links to get the access_token  
 		 */
 		
+		//System.setProperty("servername", "your_server_domain"); //default is set to "localhost"
+		//System.setProperty("port", "port_that_serves_Joseki"); // default is set to "2020"
+		 
+		
 		String directory = "/Users/fuming/tmp/saveface_demo";   //change this to your created directory
 		//use your token obtained from Facebook, the token will expire after 1 hour
 		String token = "AAAAAAITEghMBAI6lX5LZAkMRBXSas1XZBw0pYqdbF4o203OvZAU1CtEKca6IFJ25ToaRP7AePrqvNc5S5ZC19ZCwQSWTRqKGpJvDaDouECwZDZD";
 		Exercise1.initModel(directory, "me", token);
-	//	Exercise1.fetchFriends(rootuser);
+//		Exercise1.fetchFriends(rootuser);
 		Exercise1.fetchAlbums(rootuser);
 		Exercise1.fetchAllPhotos(albums);
 		
