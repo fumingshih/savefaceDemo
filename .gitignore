@@ -1,0 +1,13 @@
+bin
+
+#java specific
+*.class
+
+#generic files
+
+*.lock
+*~
+*.DS_Store
+*.swp
+*.out
+
